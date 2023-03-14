@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Changing button</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="Javascript/jquery.js"></script>
+</head>
+<style>
+    body{
+    background: rgb(77, 56, 197);
+    background: linear-gradient(90deg, rgb(77, 56, 197) 0%, rgb(44, 179, 78) 100%);
+    width: 90%;
+    }
+    #thebutton{
+        color: white;
+        background-color: black;
+        transform: translate(880px, 440px);
+    }
+</style>
+<body>
+    <button id="thebutton" type="button">the button</button>
+    <script>
+        var strnum = 0
+        $("#thebutton").on("click", function changeposition(){
+            var p = $("#thebutton")
+            var x = Math.random() * (500 - 100 + 1) + 100
+            var y = Math.random() * (700 - 150 + 1) + 150
+            var z = Math.random() * (500 - 100 + 1)
+            var az = Math.random() * (700 - 150 + 1)
+            p.css("transform", `translate(${x}px, ${y}px)`)
+            var newp = $("body").append($('<button/>')
+            .attr("id", `${strnum}`)
+            .addClass("buttons")
+            .text("the button")
+            .css("transform", `translate(${z}px, ${az}px)`)
+            .css("background-color", "black")
+            .css("color", "white"))
+            strnum ++
+        $(".buttons").on("click", function changeposition2(e){
+            var enewp = e.target.id
+            p = $(`#${enewp}`)
+            var x = Math.random() * (500 - 100 + 1)
+            var y = Math.random() * (700 - 150 + 1)
+            p.css("transform", `translate(${x}px, ${y}px)`)
+        })})
+    </script>
+</body>
