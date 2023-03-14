@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Celeste</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="Javascript/jquery.js"></script>
+	</head>
+	<style>
+		p, h1, h2, h3, h4, h5, h6, * {
+    text-align: center;
+    font-family: 'halogen';
+    src: url(https://dl.dafont.com/dl/?f=halogen);
+}
+body {
+    background: rgb(254,200,255);
+    background: linear-gradient(90deg, rgb(254, 200, 255) 0%, rgb(207, 254, 255) 100%);
+    font-size: 20px;
+    margin: 1cm;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color:rgb(206, 171, 255);
+    font-size: 20px;
+}
+.wavy {
+position: relative;
+}
+.wavy span {
+position: relative;
+display: inline-block;
+color: darkorchid;
+animation: animate .8s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i));
+font-family: 'halogen';
+src: url(https://dl.dafont.com/dl/?f=halogen);
+
+}
+
+@keyframes animate {
+0% {
+    transform: translateY(1px);
+}
+50%{
+    transform: translateY(-1px);
+}
+100% {
+    transform: translateY(1px);
+}
+}
+.wavy2 {
+position: relative;
+font-size: xx-large;
+}
+
+.wavy2 span {
+position: relative;
+display: inline-block;
+color:crimson;
+animation: animate2 .4s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i));
+font-family: 'halogen';
+src: url(https://dl.dafont.com/dl/?f=halogen);			
+}
+
+@keyframes animate2 {
+0% {
+    transform: translateY(4px);
+    transform: translateX(1px);
+}
+25% {
+    transform: translateY(-1px);
+}
+50%{
+    transform: translateY(-4px);
+    transform: translate(1px);
+}
+75% {
+    transform: translate(-1px);
+}
+100% {
+    transform: translateY(4px);
+    transform: translate(1px);
+}
+
+
+}
+#spoiler {
+	display:none;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+	</style>
+	<body>
+		<h1>Celeste</h1>
+		<h2>What is <span style="color:aqua">Celeste</span>?</h2>
+		<p>Celeste is a game about a girl called Madeline who's trying to climb the Celeste mountain while traveling through the various sites that are in the mountain</p>
+		<div class="container">
+			<h2>What places are there on the <span style="color:aqua">Celeste mountain</span>?</h2>
+			<p>the places here are divided in chapters listed below</p>
+			<div class="table-responsive">
+				<table class="table table-hover">
+    					<thead>
+      						<tr>
+        						<th>Name</th>
+        						<th><abbr title="meters">mts</abbr></th>
+        						<th>Encounters</th>
+      						</tr>
+	    				</thead>
+    					<tbody>
+      						<tr>
+        						<td>Prologe</td>
+        						<td>0</td>
+        						<td>Granny, Crow</td>
+      						</tr>
+      						<tr>
+        						<td>Forsaken city</td>
+        						<td>500</td>
+        						<td>Theo</td>
+      						</tr>
+      						<tr>
+        						<td>Old site</td>
+        						<td>1000</td>
+        						<td>Badeline, Theo</td>
+      						</tr>
+      						<tr>
+        						<td>Celestial resort</td>
+        						<td>1500</td>
+        						<td>Mr. Oshiro, Theo, Badeline</td>
+      						</tr>
+      						<tr>
+        						<td>Golden ridge</td>
+        						<td>2000</td>
+        						<td>Granny, Theo, Badeline, Crow</td>
+      						</tr>
+      						<tr>
+        						<td>Mirror temple</td>
+        						<td>2500</td>
+        						<td>Theo, Badeline</td>
+      						</tr>
+      						<tr>
+        						<td>Reflections</td>
+        						<td>0 - ~-100</td>
+        						<td>Granny, Crow, Theo, Badeline</td>
+      						</tr>
+      						<tr>
+        						<td>The summit</td>
+        						<td>0 - 3000</td>
+        						<td>Badeline</td>
+      						</tr>
+      						<tr>
+        						<td>Epiloge</td>
+        						<td>0</td>
+        						<td>Mr. Oshiro, Theo, Badeline, Crow, Granny</td>
+      						</tr>
+      						<tr>
+        						<td>Core</td>
+        						<td>??</td>
+        						<td>Granny, Crow, Badeline</td>
+      						</tr>
+      						<tr>
+        						<td>Farewell</td>
+        						<td>??</td>
+        						<td>Crow, Badeline, Granny, Theo</td>
+      						</tr>
+    					</tbody>
+				</table>
+			</div>
+		</div>
+		<h2>Who are these people?</h2>
+		<h3 style="color:crimson;">Madeline</h3>
+		<p>She's a redhead, and she's thats to prove herself to everyone by climbing the <span style="color:aqua">Celeste mountain</span></p>
+		<h3 style="color:rgb(89, 133, 44);">Granny</h3>
+		<p>She is an old lady who lives in a cabin in the foot of the mountain, and has some weird life perspective <span style="color:crimson">Madeline</span> doesnt quite get...</p>
+		<h3 style="color:rgb(57, 87, 78)">Crow</h3>
+		<p>It's a lil bird that looks after you for the greater part of the mountain</p>
+		<h3 style="color:chartreuse">Theo</h3>
+		<p>He's another friendly climber in the mountain who may come in handy...</p>
+		<h3 style="color:darkorchid">Badeline</h3>
+		<div class="wavy">
+		<p>She's a <span style="--i:10" >P</span><span style="--i:9">a</span><span style="--i:8">r</span><span style="--i:7">t</span>
+		<span style="--i:6">o</span><span style="--i:5">f</span>
+		<span style="--i:4"> </span><span style="--i:3">y</span><span style="--i:2">o</span><span style="--i:1">u</span> that looks after you always in a particular way...</p>
+		</div>
+		<h3 style="color:green">Mr. oshiro</h3>
+		<p>he's a humble guy who runs the celestial resort, and its apparenly having a tough time getting customers...</p>
+		<h2>Lore resume</h2>
+
+		<div class="wavy2" style="display:inline-block">
+			<span style="--i:10">S</span><span style="--i:9">P</span><span style="--i:8">O</span><span style="--i:7">I</span><span style="--i:6">L</span><span style="--i:5">E</span><span style="--i:4">R</span><span style="--i:3">S</span></div><span style="color:black"> <button class="btn" onclick="afunction()">Beware!</button></span>
+		<div id="spoiler">
+			<p>A young woman named <span style="color:crimson">Madeline</span> begins climbing Celeste Mountain, ignoring the warnings from an old woman named <span style="color:rgb(89, 133, 44)">Granny</span> who lives at its base. <span style="color:crimson">Madeline</span> makes her way through a deserted city, where she encounters a fellow traveler named <span style="color:chartreuse">Theo</span>. <span style="color:crimson">Madeline</span> camps out for the night and has a dream in which a dark reflection of herself, known as <span class="wavy"><span style="--i:10">P</span><span style="--i:9">a</span><span style="--i:8">r</span><span style="--i:7">t</span>
+				<span style="--i:6">o</span><span style="--i:5">f</span>
+				<span style="--i:4"> </span><span style="--i:3">y</span><span style="--i:2">o</span><span style="--i:1">u</span></span> within the game and <span style="color:darkorchid">Badeline</span> by the fanbase and developers, splits apart from her via a mystical mirror and attempts to stop <span style="color:crimson">Madeline</span>'s climb. <span style="color:crimson">Madeline</span> escapes from <span style="color:darkorchid">Badeline</span> and wakes up from her nightmare. <br>
+
+				Continuing the climb, <span style="color:crimson">Madeline</span> reaches an old hotel named the Celestial Resort. The hotel's ghostly concierge, <span style="color:green">Mr. Oshiro</span>, tries to persuade <span style="color:crimson">Madeline</span> to stay despite the damaged condition of the hotel. She reluctantly entertains him by cleaning part of the resort, but he is keen on having her stay for a night in the presidential suite. Upon reaching the suite, <span style="color:darkorchid">Badeline</span> unexpectedly reappears in the real world, taunting <span style="color:green">Mr. Oshiro</span> before creating a hole for <span style="color:crimson">Madeline</span> to escape through. <span style="color:green">Mr. Oshiro</span>, enraged by <span style="color:darkorchid">Badeline</span>'s words and assuming <span style="color:crimson">Madeline</span> spoke them, chases <span style="color:crimson">Madeline</span> out and destroys much of the hotel before she calms him down, and <span style="color:crimson">Madeline</span> continues climbing. <br>
+				
+				At Golden Ridge, <span style="color:crimson">Madeline</span> again encounters <span style="color:rgb(89, 133, 44)">Granny</span>. <span style="color:rgb(89, 133, 44)">Granny</span> tells her that she is surprised she has made it this far and offers to tell her about a shortcut back down if she wants to give up. <span style="color:crimson">Madeline</span> refuses, and after powering through the harsh winds of the Ridge, meets up with <span style="color:chartreuse">Theo</span> at a gondola. Partway up the gondola ride, <span style="color:darkorchid">Badeline</span> appears again and stalls the lift, causing <span style="color:crimson">Madeline</span> to have a panic attack as the lift shakes wildly. Theo calms her down, and the gondola begins to move again, arriving at an ancient temple. <span style="color:crimson">Madeline</span> and <span style="color:chartreuse">Theo</span> are separated and trapped inside mirrors, but <span style="color:crimson">Madeline</span> escapes and finds <span style="color:chartreuse">Theo</span> encased inside a magic crystal. Monsters created from <span style="color:crimson">Madeline</span> and <span style="color:chartreuse">Theo</span>'s insecurities attack them, but <span style="color:crimson">Madeline</span> carries <span style="color:chartreuse">Theo</span> out of the temple and frees him from the crystal. <br>
+				
+				<span style="color:crimson">Madeline</span> and <span style="color:chartreuse">Theo</span> set up camp, and she confides in him about her mental health issues and <span style="color:darkorchid">Badeline</span>'s interferences before resting. Later that night, she seeks out <span style="color:darkorchid">Badeline</span> and expresses her wish to leave her behind. In a fit of anger, <span style="color:darkorchid">Badeline</span> throws Madeline down to the base of the mountain, where she once again finds Granny. She suggests that <span style="color:darkorchid">Badeline</span> might be scared and says that Madeline should try talking instead of abandoning her. <span style="color:crimson">Madeline</span> searches for <span style="color:darkorchid">Badeline</span> again, apologizes for pushing her away, and vows to climb the mountain together. <span style="color:darkorchid">Badeline</span> initially lashes out at <span style="color:crimson">Madeline</span>, but relents and forgives her. <span style="color:crimson">Madeline</span> and <span style="color:darkorchid">Badeline</span> recombine and work their way back up the mountain before finally reaching Celeste Mountain's summit. <br>
+				
+				An epilogue shows <span style="color:crimson">Madeline</span> celebrating her success with <span style="color:darkorchid">Badeline</span>, <span style="color:chartreuse">Theo</span>, <span style="color:rgb(89, 133, 44)">Granny</span>, <span style="color:green">Mr. Oshiro</span>, and a <span class="wavy" style="color:red; font-size: 20px;"><span style="--i:1; color: red;">S</span><span style="--i:2; color: red;">t</span><span style="--i:3; color: red;">r</span><span style="--i:4; color: red;">a</span><span style="--i:5; color: red;">w</span><span style="--i:6; color: red;">b</span><span style="--i:7; color: red;">e</span><span style="--i:8; color: red;">r</span><span style="--i:9; color: red;">r</span><span style="--i:10; color: red;">y</span>
+				<span style="--i:11; color: red;">p</span><span style="--i:12; color: red;">i</span><span style="--i:13; color: red;">e</span></span>. The size of the pie and the number of strawberries within it depend on how many collectible strawberries the player acquired throughout the game. <br>
+				
+				In two post-ending chapters, <span style="color:crimson">Madeline</span> explores the core of Celeste Mountain a year after the main story in the chapter Core, and in the final chapter Farewell, <span style="color:crimson">Madeline</span> copes with missing <span style="color:rgb(89, 133, 44)">Granny</span>'s funeral – revealed to be named Celia and a friend of <span style="color:chartreuse">Theo</span>'s grandfather. </p>
+		</div>
+	<script>
+		$(".btn").on("click", function afunction(){
+			if($("#spoiler").css("display") == "none"){
+				$("#spoiler").css("display", "block")
+			}else{
+				$("#spoiler").css("display", "none")
+			}
+		})
+	</script>
