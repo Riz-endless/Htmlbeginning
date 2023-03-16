@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Random gradients</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<style>
+        body{
+        background: rgb(77, 56, 197);
+        background: linear-gradient(90deg, rgb(255, 157, 252) 0%, rgb(255, 168, 87) 100%);
+        }
+</style>
+<body id="target">
+    <button id="hey" type="button" onclick="colors()" style="position:absolute; left:50%; right:50%;">change colors</button>
+    <script>
+        $("#hey").on("click", function (){
+        var red = (Math.random() * (251) + 1)
+        var green = (Math.random() * (251) + 1)
+        var blue = (Math.random() * (251) + 1)
+        var red2 = (Math.random() * (251) + 1)
+        var green2 = (Math.random() * (251) + 1)
+        var blue2 = (Math.random() * (251) + 1)
+        console.log(red, green, blue, red2, green2, blue2)
+        $("#target").css("background", `linear-gradient(90deg, rgb(${red}, ${green}, ${blue}) 0%, rgb(${red2}, ${green2}, ${blue2}) 100%)`)
+        })
+    </script>
+</body>
